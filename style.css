@@ -49,6 +49,11 @@ h1 {
   display: flex;
 }
 .warning-box {
+  margin-bottom: 3em;
+}
+
+.score,
+.highscore {
   margin-bottom: 2em;
 }
 
@@ -57,11 +62,15 @@ input {
   background-color: grey;
   border: white 3px solid;
   margin-bottom: 2em;
+  font-family: "Press Start 2P";
+  width: 6em;
+  font-size: 2em;
+  text-align: center;
 }
 
 .check-btn {
   padding: 20px;
-  width: 60%;
+  width: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +82,10 @@ input {
   padding: 2em;
 }
 .guess-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2em;
 }
 .box {
@@ -84,4 +97,26 @@ input {
   align-items: center;
   font-size: 2em;
   margin: 2em;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.744);
+}
+.btn {
+  transition: 0.15s;
+}
+.btn:active {
+  color: white;
+  background-color: black;
+}
+
+.again-btn {
+  padding: 20px;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
 }
