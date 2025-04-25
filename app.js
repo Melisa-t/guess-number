@@ -12,18 +12,23 @@ let guessNumber = document.querySelector(`.guess`);
 let correctNumber = Math.floor(Math.random() * 20 + 1);
 
 const checkNumber = function (num) {
-  console.log(correctNumber);
-  if (num < correctNumber) {
+    if (num === `0` || num === 0 || num === `` || num === null || num === undefined || num > 20) {
+        alert(`Please enter a valid number!`)
+    }
+  else if (num < correctNumber) {
     warningText.textContent = `Too low!`;
     score.textContent--;
+    numberBox.textContent = `${guessNumber.value}`;
   } else if (num > correctNumber) {
     warningText.textContent = `Too high!`;
     score.textContent--;
+    numberBox.textContent = `${guessNumber.value}`;
   } else {
     warningText.textContent = `Correct!`;
     correctNumber = Math.floor(Math.random() * 20 + 1);
     scoresArray.push(score.textContent);
     score.textContent = 20;
+    numberBox.textContent = `${guessNumber.value}`;
   }
 };
 
@@ -38,7 +43,6 @@ const findHighScore = function (scoreArr) {
 checkButton.addEventListener(`click`, () => {
   checkNumber(guessNumber.value);
   findHighScore(scoresArray);
-  numberBox.textContent = `${guessNumber.value}`;
 });
 
 replayButton.addEventListener(`click`, () => {
