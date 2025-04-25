@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess Mel's Number</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer href="app.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="header-container">
-            <div class="again-btn">Again!</div>
-            <div class="info-box">Between 1 and 20</div>
-        </div>
-        <div class="game-container">
-            <h1>Guess Mel's Number</h1>
-            <hr>
-            <div class="guess-container">
-                <input type="number" name="guess" id="guess-input">
-                <div class="check-btn">Check!</div>
-            </div>
+      <div class="header-container">
+        <div class="again-btn">Again!</div>
+        <div class="info-box">Between 1 and 20</div>
+      </div>
+      <div class="game-container">
+        <h1>Guess Mel's Number!</h1>
+        <div class="box">?</div>
+        <div class="game-box">
+          <div class="guess-container">
+            <input type="number" name="guess" id="guess-input" />
+            <div class="check-btn">Check!</div>
+          </div>
+          <div class="information-container">
             <div class="warning-box"></div>
             <div class="stats-container">
-                <div class="score"></div>
-                <div class="highscore"></div>
+              <div class="score">Score:</div>
+              <div class="highscore">Highscore:</div>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -31,3 +31,17 @@ body {
     align-items: center;
     margin: 20px;
 }
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.game-box{
+    display: flex;
+    gap: 200px;
+}
