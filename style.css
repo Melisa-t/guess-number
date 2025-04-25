@@ -1,47 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    height: 100%;
-    font-family: "Press Start 2P";
+  width: 100%;
+  font-family: "Press Start 2P";
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-
-    flex-direction: column;
-
+.container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
 }
 
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
 
-.game-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 
+h1 {
+  margin: 30px;
+}
 
-.game-box{
-    display: flex;
-    gap: 200px;
+.game-box {
+  display: flex;
+}
+.warning-box {
+  margin-bottom: 2em;
+}
+
+input {
+  padding: 30px;
+  background-color: grey;
+  border: white 3px solid;
+  margin-bottom: 2em;
+}
+
+.check-btn {
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.stats-container {
+  padding: 2em;
+}
+.guess-container {
+  padding: 2em;
+}
+.box {
+  background-color: white;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 2em;
 }
