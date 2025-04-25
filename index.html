@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess Mel's Number</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer href="app.js"></script>
+    <script defer src="app.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,17 +22,17 @@
       </div>
       <div class="game-container">
         <h1>Guess Mel's Number!</h1>
-        <div class="box">?</div>
+        <div class="number">?</div>
         <div class="game-box">
           <div class="guess-container">
-            <input type="number" name="guess" id="guess-input" max="20" />
+            <input class="guess" type="number" name="guess" id="guess-input" max="20" min="0" />
             <div class="check-btn btn">Check!</div>
           </div>
           <div class="information-container">
             <div class="stats-container">
               <div class="warning-box">!!!</div>
-              <div class="score">Score:</div>
-              <div class="highscore">Highscore:</div>
+              <div class="score">Score: <span class="score-point">20</span></div>
+              <div class="highscore">Highscore:<span class="hs-point"></span></div>
             </div>
           </div>
         </div>
