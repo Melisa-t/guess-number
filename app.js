@@ -1,4 +1,4 @@
-const replayButton = document.querySelector(`.again-btn`);
+const replayButton = document.querySelector(`.restart-btn`);
 const checkButton = document.querySelector(`.check-btn`);
 
 let numberBox = document.querySelector(`.number`);
