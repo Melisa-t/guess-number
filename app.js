@@ -37,7 +37,7 @@ const checkNumber = function (num) {
     scoresArray.push(score.textContent);
     score.textContent = 20;
     guessNumber.value = ``;
-    numberBox.textContent = `⭐`;
+    numberBox.textContent = ` ${num} `;
   }
 };
 
@@ -60,6 +60,7 @@ const changeBackGround = function (){
   if (warningText.textContent === `Correct! 🎉`){
     body.style.backgroundColor = `rgb(110, 161, 125)`
     guessNumber.style.backgroundColor = `rgb(110, 161, 125)`
+    numberBox.style.width = `8em`
   } else {
         body.style.backgroundColor = `rgb(204, 174, 174)`
         guessNumber.style.backgroundColor = `rgb(204, 174, 174)`
