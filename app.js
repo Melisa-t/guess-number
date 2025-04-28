@@ -5,11 +5,13 @@ let numberBox = document.querySelector(`.number`);
 let warningText = document.querySelector(`.warning-box`);
 let score = document.querySelector(`.score-point`);
 let highScore = document.querySelector(`.hs-point`);
+let body = document.querySelector(`html`)
 const scoresArray = [];
 
 let guessNumber = document.querySelector(`.guess`);
 
 let correctNumber = Math.floor(Math.random() * 20 + 1);
+console.log(correctNumber)
 
 const checkNumber = function (num) {
   if (
@@ -30,14 +32,13 @@ const checkNumber = function (num) {
     score.textContent--;
     numberBox.textContent = `${guessNumber.value}`;
   } else {
-    warningText.textContent = `Correct!`;
+    warningText.textContent = `Correct! 🎉`;
     correctNumber = Math.floor(Math.random() * 20 + 1);
+    body.style.backgroundColor = `green`
     scoresArray.push(score.textContent);
     score.textContent = 20;
     guessNumber.value = ``
     numberBox.textContent = `?`
-    
-    
   }
 };
 
@@ -49,12 +50,7 @@ const findHighScore = function (scoreArr) {
   highScore.textContent = maxScore;
 };
 
-checkButton.addEventListener(`click`, () => {
-  checkNumber(guessNumber.value);
-  findHighScore(scoresArray);
-});
-
-replayButton.addEventListener(`click`, () => {
+const resetValues = function (val){
   score.textContent = 20;
   warningText.textContent = `Start guessing!`;
   highScore.textContent = ``;
@@ -62,4 +58,13 @@ replayButton.addEventListener(`click`, () => {
   numberBox.textContent = `?`;
   scoresArray = [];
   correctNumber = Math.floor(Math.random() * 20 + 1);
+}
+
+checkButton.addEventListener(`click`, () => {
+  checkNumber(guessNumber.value);
+  findHighScore(scoresArray);
+});
+
+replayButton.addEventListener(`click`, () => {
+resetValues()
 });

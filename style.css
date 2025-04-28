@@ -10,10 +10,13 @@
   font-style: normal;
 }
 
+html {
+  background-color: grey;
+}
+
 body {
   width: 100%;
   font-family: "Press Start 2P";
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +104,7 @@ input {
 
 .btn:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.744);
+  background-color: rgb(225, 225, 225);
 }
 .btn {
   transition: 0.15s;
