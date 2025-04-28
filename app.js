@@ -43,7 +43,7 @@ const checkNumber = function (num) {
 
 const checkGameOver = function (score) {
   if (score === 0 || score === `0` || score < 0) {
-    alert(`🥺 Game over!`)
+    alert(`🥺 Game over! Auto reset.`)
     resetValues()
   }
 }
