@@ -34,7 +34,10 @@ const checkNumber = function (num) {
     correctNumber = Math.floor(Math.random() * 20 + 1);
     scoresArray.push(score.textContent);
     score.textContent = 20;
-    numberBox.textContent = `${guessNumber.value}`;
+    guessNumber.value = ``
+    numberBox.textContent = `?`
+    
+    
   }
 };
 
