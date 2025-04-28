@@ -10,8 +10,8 @@ let scoresArray = [];
 
 let guessNumber = document.querySelector(`.guess`);
 
-let correctNumber = Math.floor(Math.random() * 20 + 1);
-console.log(correctNumber);
+let correctNumber = Math.trunc(Math.random() * 20) + 1;
+
 
 const checkNumber = function (num) {
   if (
@@ -33,7 +33,7 @@ const checkNumber = function (num) {
     numberBox.textContent = `${guessNumber.value}`;
   } else {
     warningText.textContent = `Correct! 🎉`;
-    correctNumber = Math.floor(Math.random() * 20 + 1);
+    correctNumber = Math.trunc(Math.random() * 20) + 1;
     scoresArray.push(score.textContent);
     score.textContent = 20;
     guessNumber.value = ``;
@@ -56,7 +56,7 @@ let resetValues = function () {
   guessNumber.value = ``;
   numberBox.textContent = `?`;
   scoresArray = [];
-  correctNumber = Math.floor(Math.random() * 20 + 1);
+  correctNumber = Math.trunc(Math.random() * 20) + 1;
   console.log(correctNumber);
 };
 
