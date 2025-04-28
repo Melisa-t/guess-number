@@ -41,6 +41,13 @@ const checkNumber = function (num) {
   }
 };
 
+const checkGameOver = function (score) {
+  if (score === 0 || score === `0` || score < 0) {
+    alert(`🥺 Game over!`)
+    resetValues()
+  }
+}
+
 const findHighScore = function (scoreArr) {
   let maxScore = 0;
   for (let i = 0; i <= scoreArr.length; i++) {
@@ -73,6 +80,7 @@ checkButton.addEventListener(`click`, () => {
   checkNumber(guessNumber.value);
   findHighScore(scoresArray);
   changeBackGround();
+  checkGameOver(score.textContent);
 });
 
 replayButton.addEventListener(`click`, () => {
