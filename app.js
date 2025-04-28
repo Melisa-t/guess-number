@@ -49,6 +49,16 @@ const findHighScore = function (scoreArr) {
   highScore.textContent = maxScore;
 };
 
+const changeBackGround = function (){
+  if (warningText.textContent === `Correct! 🎉`){
+    body.style.backgroundColor = `green`
+    guessNumber.style.backgroundColor = `green`
+  } else {
+        body.style.backgroundColor = `rgb(204, 174, 174)`
+        guessNumber.style.backgroundColor = `rgb(204, 174, 174)`
+  }
+}
+
 let resetValues = function () {
   score.textContent = 20;
   warningText.textContent = `Start guessing!`;
@@ -64,6 +74,7 @@ checkButton.addEventListener(`click`, () => {
   checkNumber(guessNumber.value);
   findHighScore(scoresArray);
   console.log(correctNumber);
+  changeBackGround();
 });
 
 replayButton.addEventListener(`click`, () => {

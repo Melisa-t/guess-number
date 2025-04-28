@@ -9,10 +9,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+html {
+  background-color: rgb(204, 174, 174);
+}
 body {
   width: 100%;
   font-family: "Press Start 2P";
-  background-color: rgb(204, 174, 174);
+
   display: flex;
   justify-content: center;
   align-items: center;
