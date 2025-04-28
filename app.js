@@ -68,5 +68,4 @@ checkButton.addEventListener(`click`, () => {
 
 replayButton.addEventListener(`click`, () => {
   resetValues();
-  
 });
