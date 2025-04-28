@@ -60,10 +60,11 @@ const changeBackGround = function (){
   if (warningText.textContent === `Correct! 🎉`){
     body.style.backgroundColor = `rgb(110, 161, 125)`
     guessNumber.style.backgroundColor = `rgb(110, 161, 125)`
-    numberBox.style.width = `8em`
+    numberBox.style.width = `10em`
   } else {
         body.style.backgroundColor = `rgb(204, 174, 174)`
         guessNumber.style.backgroundColor = `rgb(204, 174, 174)`
+        umberBox.style.width = `5em`
   }
 }
 
