@@ -12,7 +12,6 @@ let guessNumber = document.querySelector(`.guess`);
 
 let correctNumber = Math.trunc(Math.random() * 20) + 1;
 
-
 const checkNumber = function (num) {
   if (
     num === `0` ||
@@ -41,10 +40,10 @@ const checkNumber = function (num) {
 
 const checkGameOver = function (score) {
   if (score === 0 || score === `0` || score < 0) {
-    alert(`🥺 Game over! Auto reset.`)
-    resetValues()
+    alert(`🥺 Game over! Auto reset.`);
+    resetValues();
   }
-}
+};
 
 const findHighScore = function (scoreArr) {
   let maxScore = 0;
@@ -54,17 +53,17 @@ const findHighScore = function (scoreArr) {
   highScore.textContent = maxScore;
 };
 
-const changeBackGround = function (){
-  if (warningText.textContent === `Correct! 🎉`){
-    body.style.backgroundColor = `rgb(110, 161, 125)`
-    guessNumber.style.backgroundColor = `rgb(110, 161, 125)`
-    numberBox.style.width = `8em`
+const changeBackGround = function () {
+  if (warningText.textContent === `Correct! 🎉`) {
+    body.style.backgroundColor = `rgb(110, 161, 125)`;
+    guessNumber.style.backgroundColor = `rgb(110, 161, 125)`;
+    numberBox.style.width = `8em`;
   } else {
-        body.style.backgroundColor = `rgb(204, 174, 174)`
-        guessNumber.style.backgroundColor = `rgb(204, 174, 174)`
-        umberBox.style.width = `5em`
+    body.style.backgroundColor = `rgb(204, 174, 174)`;
+    guessNumber.style.backgroundColor = `rgb(204, 174, 174)`;
+    umberBox.style.width = `5em`;
   }
-}
+};
 
 let resetValues = function () {
   score.textContent = 20;
