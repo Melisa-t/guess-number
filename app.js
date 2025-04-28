@@ -68,7 +68,6 @@ const changeBackGround = function () {
 let resetValues = function () {
   score.textContent = 20;
   warningText.textContent = `Start guessing!`;
-  highScore.textContent = ``;
   guessNumber.value = ``;
   numberBox.textContent = `?`;
   scoresArray = [];
