@@ -51,8 +51,8 @@ const findHighScore = function (scoreArr) {
 
 const changeBackGround = function (){
   if (warningText.textContent === `Correct! 🎉`){
-    body.style.backgroundColor = `green`
-    guessNumber.style.backgroundColor = `green`
+    body.style.backgroundColor = `rgb(110, 161, 125)`
+    guessNumber.style.backgroundColor = `rgb(110, 161, 125)`
   } else {
         body.style.backgroundColor = `rgb(204, 174, 174)`
         guessNumber.style.backgroundColor = `rgb(204, 174, 174)`
