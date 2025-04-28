@@ -67,13 +67,11 @@ let resetValues = function () {
   numberBox.textContent = `?`;
   scoresArray = [];
   correctNumber = Math.trunc(Math.random() * 20) + 1;
-  console.log(correctNumber);
 };
 
 checkButton.addEventListener(`click`, () => {
   checkNumber(guessNumber.value);
   findHighScore(scoresArray);
-  console.log(correctNumber);
   changeBackGround();
 });
 
